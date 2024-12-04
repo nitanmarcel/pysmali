@@ -1,15 +1,15 @@
 import warnings
 from typing import Iterator, List, Optional, Union, Type
 
-from smali.attributes import StatementAttributes
-from smali.block import Block, BlockItemType
-from smali.exceptions import FormatError, ParseError, ValidationError, ValidationWarning, WhitespaceWarning
-from smali.lib.smali_compare import SmaliCompare
-from smali.statements import Statement, MethodStatement, FieldStatement, StatementType
+from .attributes import StatementAttributes
+from .block import Block, BlockItemType
+from .exceptions import FormatError, ParseError, ValidationError, ValidationWarning, WhitespaceWarning
+from .lib.smali_compare import SmaliCompare
+from .statements import Statement, MethodStatement, FieldStatement, StatementType
 
 
 class SmaliFile:
-    __version__ = None
+    __version__ = "0.2.5"
     VALIDATE: bool = False
 
     raw_code: str

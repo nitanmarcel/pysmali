@@ -1,7 +1,7 @@
 from abc import ABCMeta
 from typing import Dict, Optional, Type
 
-from smali.modifiers import AnnotationModifiers, ClassModifiers, EndModifiers, FieldModifiers, MethodModifiers, Modifiers, RestartModifiers
+from .modifiers import AnnotationModifiers, ClassModifiers, EndModifiers, FieldModifiers, MethodModifiers, Modifiers, RestartModifiers
 
 
 class Token(metaclass=ABCMeta):

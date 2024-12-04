@@ -1,7 +1,7 @@
 from typing import List, Union, Type, NewType, Generic
 
-from smali.exceptions import FormatError
-from smali.statements import Statement, StatementType
+from .exceptions import FormatError
+from .statements import Statement, StatementType
 
 BlockItem = NewType('BlockItem', Union[Statement, 'Block'])
 BlockItemType = NewType('BlockItemType', Union[StatementType, 'Block[StatementType]'])

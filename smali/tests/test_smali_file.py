@@ -6,9 +6,9 @@ import warnings
 from typing import List
 
 from smali import SmaliFile
-from smali.block import Block
-from smali.exceptions import ValidationError
-from smali.statements import Statement, MethodStatement, FieldStatement
+from .block import Block
+from .exceptions import ValidationError
+from .statements import Statement, MethodStatement, FieldStatement
 
 
 class TestSmaliFiles(unittest.TestCase):

@@ -3,14 +3,14 @@ import warnings
 from abc import ABCMeta, abstractmethod
 from typing import Dict, List, Optional, Tuple, Type, Union, Iterable, TypeVar
 
-from smali.attributes import StatementAttributes
-from smali.exceptions import ParseError, ValidationError, ValidationWarning, WhitespaceWarning
-from smali.lib.peekable import Peekable
-from smali.lib.smali_compare import SmaliCompare
-from smali.literals import IntLiteral
-from smali.modifiers import EndModifiers, Modifiers
-from smali.qualifiers import Qualifier
-from smali.tokens import Annotation, ArrayData, Catch, CatchAll, Class, End, Enum, Field, Implements, Line, Local, Locals, Method, PackedSwitch, Param, Prologue, Registers, Restart, Source, SparseSwitch, Subannotation, Super, Token, Tokens, TokensLex
+from .attributes import StatementAttributes
+from .exceptions import ParseError, ValidationError, ValidationWarning, WhitespaceWarning
+from .lib.peekable import Peekable
+from .lib.smali_compare import SmaliCompare
+from .literals import IntLiteral
+from .modifiers import EndModifiers, Modifiers
+from .qualifiers import Qualifier
+from .tokens import Annotation, ArrayData, Catch, CatchAll, Class, End, Enum, Field, Implements, Line, Local, Locals, Method, PackedSwitch, Param, Prologue, Registers, Restart, Source, SparseSwitch, Subannotation, Super, Token, Tokens, TokensLex
 
 
 class Statement(metaclass=ABCMeta):
